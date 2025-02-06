@@ -1,0 +1,258 @@
+{
+  "GameMode": 1,
+  "Domains": [
+    {
+      "Name": "FI MUNI",
+      "Questions": [
+        {
+          "Text": "Jak se jmenuje nov\u00FD d\u011Bkan fakulty?",
+          "Points": 2000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "Ji\u0159\u00ED Barnat",
+              "Chosen": false
+            },
+            {
+              "Text": "Miroslav K\u0159et\u00EDnsk\u00FD",
+              "Chosen": false
+            },
+            {
+              "Text": "Lubom\u00EDr Popel\u00EDnsk\u00FD",
+              "Chosen": false
+            },
+            {
+              "Text": "Jan Do\u0161k\u00E1\u0159",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Kdy byla zalo\u017Eena Fakulta Informatiky MUNI?",
+          "Points": 5000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "1994",
+              "Chosen": false
+            },
+            {
+              "Text": "2002",
+              "Chosen": false
+            },
+            {
+              "Text": "1997",
+              "Chosen": false
+            },
+            {
+              "Text": "1990",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Kolik je v knihovn\u011B na FI knih?",
+          "Points": 4000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "Asi 18000",
+              "Chosen": false
+            },
+            {
+              "Text": "Na FI knihovna nen\u00ED",
+              "Chosen": false
+            },
+            {
+              "Text": "Asi 2000",
+              "Chosen": false
+            },
+            {
+              "Text": "Asi 500",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Kdo vyu\u010Duje p\u0159edm\u011Bt PB156 Po\u010D\u00EDta\u010Dov\u00E9 s\u00EDt\u011B?",
+          "Points": 3000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "Eva Hladk\u00E1",
+              "Chosen": false
+            },
+            {
+              "Text": "Ji\u0159\u00ED Barnat",
+              "Chosen": false
+            },
+            {
+              "Text": "Jan Kol\u00E1\u010Dek",
+              "Chosen": false
+            },
+            {
+              "Text": "Josef Huml\u00ED\u010Dek",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Jak\u00E1 je adresa FI MUNI?",
+          "Points": -1,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "Botanick\u00E1 554/68a, Brno",
+              "Chosen": false
+            },
+            {
+              "Text": "Me\u010Dov\u00E1 325/32c, Praha",
+              "Chosen": false
+            },
+            {
+              "Text": "Kounicova 256/13, Brno",
+              "Chosen": false
+            },
+            {
+              "Text": "Zeln\u00FD trh 589/13, Brno",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Jak\u00E1 je barva FI MUNI?",
+          "Points": 1000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "\u017Elut\u00E1",
+              "Chosen": false
+            },
+            {
+              "Text": "modr\u00E1",
+              "Chosen": false
+            },
+            {
+              "Text": "zelen\u00E1",
+              "Chosen": false
+            },
+            {
+              "Text": "\u010Dern\u00E1",
+              "Chosen": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "C#",
+      "Questions": [
+        {
+          "Text": "Kdo vyu\u010Duje p\u0159edm\u011Bt PV178?",
+          "Points": 5000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "Jaroslav Pelik\u00E1n",
+              "Chosen": false
+            },
+            {
+              "Text": "V\u00E1clav Maty\u00E1\u0161",
+              "Chosen": false
+            },
+            {
+              "Text": "Luk\u00E1\u0161 Vok\u0159\u00EDnek",
+              "Chosen": false
+            },
+            {
+              "Text": "Alex Hor\u00E1k",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Na\u0161li jste zlatou cihli\u010Dku",
+          "Points": 4000,
+          "Answered": false,
+          "Answers": []
+        },
+        {
+          "Text": "Toto je bonusov\u00E1 cihli\u010Dka",
+          "Points": -1,
+          "Answered": false,
+          "Answers": []
+        },
+        {
+          "Text": "Kdo cvi\u010D\u00ED skupinu 11 v p\u0159edm\u011Btu PV178?",
+          "Points": 2000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "Filip Bugo\u0161",
+              "Chosen": false
+            },
+            {
+              "Text": "Martin Mac\u00E1k",
+              "Chosen": false
+            },
+            {
+              "Text": "Ad\u00E9la Biersk\u00E1",
+              "Chosen": false
+            },
+            {
+              "Text": "Ivan Van\u00E1k",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Co znamen\u00E1 zkratka LINQ?",
+          "Points": 3000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "Language Integrated Query",
+              "Chosen": false
+            },
+            {
+              "Text": "Language Imigrated Query",
+              "Chosen": false
+            },
+            {
+              "Text": "SQL In C#",
+              "Chosen": false
+            },
+            {
+              "Text": "Language Natural Question",
+              "Chosen": false
+            }
+          ]
+        },
+        {
+          "Text": "Jak se vyslovuje C#?",
+          "Points": 1000,
+          "Answered": false,
+          "Answers": [
+            {
+              "Text": "C sharp",
+              "Chosen": false
+            },
+            {
+              "Text": "C hashtag",
+              "Chosen": false
+            },
+            {
+              "Text": "C m\u0159\u00ED\u017Eka",
+              "Chosen": false
+            },
+            {
+              "Text": "C\u00E9 m\u0159\u00ED\u017Eka",
+              "Chosen": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Teams": []
+}

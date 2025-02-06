@@ -1,0 +1,10 @@
+*
+
+!*.cs
+!SampleGame.json
+!*.md
+!*.png
+!*.puml
+!.gitignore
+
+!*/

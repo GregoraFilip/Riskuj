@@ -1,0 +1,118 @@
+@startuml Design Class Diagram Riskuj
+
+' skinparam linetype ortho
+' hide circle
+
+class GameCreator {
+    - path : string 
+
+    - SaveGame(g : Game) : void
+    - LoadGame() : Game
+    + GameCreator(p : string) : GameCreator
+    + CreateNewGame(m : GameMode) : void
+    + GetGameMode() : GameMode
+    + GetDomainsName() : Array[string]
+    + GetDomain(n : string) : Domain?
+    + DeleteDomain(n : string) : void
+    + ReplaceDomain(n : string, d : Domain) : void
+    + AddDomain(g : Game, d : Domain) : Domain
+    + GetPreview() : Game
+}
+
+class GameManager {
+    - preview : bool
+
+    + GameManager(g : Game) : GameManager
+    + GameManager(g : Game, p : bool) : GameManager
+    + AddTeam(n : string) : Team
+    + GetGameMode() : GameMode
+    + GetDomains() : Array[Domain]
+
+    + SelectedTeam(n : string) : bool
+    + QuestionAnswered(i: int, question) : (bool, Array[string])
+    + Score() : Array[(string, int)]
+    + NextTeam() : string
+    + AllQuestionsAnswered() : bool
+    + GetBonusDomains() : Array[string]
+}
+
+enum GameMode{
+    - NORMAL
+    - BONUS
+}
+
+class Game {
+    - teamIndex : int
+    - playCalled : bool
+    + GameMode : GameMode 
+
+    + Game(m : GameMode, d : Array[Domain], t: Array[Team])
+    + Play() : void
+    + NextTeam() : Team
+    + AddTeam(t : Team) : void
+    + Score() : Array[(Team, Score)]
+    + GetQuestion(d : string, i : int) : Question
+    + GetFreeQuestion() : Array[(string, Array[bool])]
+}
+
+class Domain {
+    + Name : string
+
+    + Domain(n : string, q : Array[Question]) : Domain
+    + GetFreeQuestions() : (string, Array[Question])
+    + GetQuestion(i : int) : Question
+}
+
+enum QuestionType{
+    - NORMAL
+    - BRICK
+}
+
+class Question {
+    - points : int
+    - text : string
+    - answered : bool
+    - indexRightAnswer : int
+
+    + Question(p : int, t : string, answ : Array[string])
+    + GetQuestion() : Tuple(string, Array[string])
+    + Answer(i : int) : int
+    + GetAnswered() : bool
+    + GetAnswers() : Array[Answer]
+    + GetText() : string
+    + GetPoints() : int
+    + IsBrick() : bool
+
+}
+
+class Answer {
+    - text : string 
+    + Chosen : string
+
+    + Answer(t: string) : Answer
+    + GetText() : string
+}
+
+class Team {
+    - name : string
+    - points : int
+    
+    + Team(name : string) : Team
+    + GetName() : string
+    + AddPoints(i : int) : void
+    + Score() : (string, int)
+}
+
+GameCreator "1" *--> "0..*" Game : creting > 
+GameManager "1" *--> "0..*" Game : manage >
+GameManager "1" *--> "1" Team : playingTeam >
+GameManager "1" *--> "0..*" Team : possibleTeams >
+Game "1" *--> "0..*" Domain : has >
+Game "0..*" o--> "1" GameMode : mode >
+Domain "1" *--> "5" Question : has >
+Domain "1" *--> "0..1" Question : bonus >
+Game "1" *--> "0..*" Team : has >
+Question "0..*" o--> "1" QuestionType : mode >
+Question "1" *--> "0|4" Answer : answers
+
+@enduml
