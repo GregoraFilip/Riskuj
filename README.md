@@ -11,7 +11,7 @@ The codebase is written in English, but the game itself is in Czech.
 ## Technologies
 The project is developed in **C#** using **Windows Forms** for the graphical interface. It follows an **object-oriented programming (OOP) paradigm**.
 
-The object structure of the project is outlined in *DesignClassDiagram.png*.
+The object structure of the project is outlined in [DesignClassDiagram.png](DesignClassDiagram.png).
 
 ## Installation & Running
 To run the project, follow these steps:
